@@ -2,18 +2,18 @@ import React from 'react';
 
 const SideBar = () => {
     return (
-        <div className Name="h-screen w-screen flex bg-gray-200">
-	
+        <div class="h-screen w-screen flex bg-gray-200">
+	git 
 
 	<aside
-		className ="flex flex-col items-center bg-white text-gray-700 shadow h-full">
+		class="flex flex-col items-center bg-white text-gray-700 shadow h-full">
 		
 
-		<div className ="h-16 flex items-center w-full">
+		<div class="h-20 flex items-center w-20">
 			
-			<a className ="h-6 w-6 mx-auto" href="http://svelte.dev/">
+			<a class="h-6 w-6 mx-auto" href="http://svelte.dev/">
 				<img
-					className ="h-6 w-6 mx-auto"
+					class="h-6 w-6 mx-auto"
 					src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/512px-Svelte_Logo.svg.png"
 					alt="svelte logo" />
 			</a>
@@ -21,13 +21,13 @@ const SideBar = () => {
 
 		<ul>
 			
-			<li className ="hover:bg-gray-100">
+			<li class="hover:bg-gray-100">
 				<a
 					href="."
-					className ="h-16 px-6 flex flex justify-center items-center w-full
+					class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
 					<svg
-						className ="h-5 w-5"
+						class="h-5 w-5"
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
 						height="24"
@@ -48,13 +48,13 @@ const SideBar = () => {
 				</a>
 			</li>
 
-			<li className ="hover:bg-gray-100">
+			<li class="hover:bg-gray-100">
 				<a
 					href="."
-					className ="h-16 px-6 flex flex justify-center items-center w-full
+					class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
 					<svg
-						className ="h-5 w-5"
+						class="h-5 w-5"
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
 						height="24"
@@ -71,14 +71,14 @@ const SideBar = () => {
 				</a>
 			</li>
 
-			<li className ="hover:bg-gray-100">
+			<li class="hover:bg-gray-100">
 				<a
 					href="."
-					className ="h-16 px-6 flex flex justify-center items-center w-full
+					class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
 
 					<svg
-						className ="h-5 w-5"
+						class="h-5 w-5"
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
 						height="24"
@@ -97,13 +97,13 @@ const SideBar = () => {
 				</a>
 			</li>
 
-			<li className ="hover:bg-gray-100">
+			<li class="hover:bg-gray-100">
 				<a
 					href="."
-					className ="h-16 px-6 flex flex justify-center items-center w-full
+					class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
 					<svg
-						className ="h-5 w-5"
+						class="h-5 w-5"
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
 						height="24"
@@ -123,13 +123,13 @@ const SideBar = () => {
 				</a>
 			</li>
 
-			<li className ="hover:bg-gray-100">
+			<li class="hover:bg-gray-100">
 				<a
 					href="."
-					className ="h-16 px-6 flex flex justify-center items-center w-full
+					class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
 					<svg
-						className ="h-5 w-5"
+						class="h-5 w-5"
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
 						height="24"
@@ -160,13 +160,13 @@ const SideBar = () => {
 				</a>
 			</li>
 
-			<li className ="hover:bg-gray-100">
+			<li class="hover:bg-gray-100">
 				<a
 					href="."
-					className ="h-16 px-6 flex flex justify-center items-center w-full
+					class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
 					<svg
-						className ="h-5 w-5"
+						class="h-5 w-5"
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
 						height="24"
@@ -185,13 +185,13 @@ const SideBar = () => {
 
 		</ul>
 
-		<div className ="mt-auto h-16 flex items-center w-full">
+		<div class="mt-auto h-16 flex items-center w-full">
 			
 			<button
-				className ="h-16 w-10 mx-auto flex flex justify-center items-center
+				class="h-16 w-10 mx-auto flex flex justify-center items-center
 				w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none">
 				<svg
-					className ="h-5 w-5 text-red-700"
+					class="h-5 w-5 text-red-700"
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
 					height="24"
@@ -212,8 +212,7 @@ const SideBar = () => {
 	</aside>
 </div>
         
-
-     );
+      );
 }
  
 export default SideBar;
