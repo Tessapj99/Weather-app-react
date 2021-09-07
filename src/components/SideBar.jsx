@@ -16,7 +16,7 @@ const SideBar = () => {
             <a className="h-6 w-6 mx-auto" href="http://svelte.dev/">
               <img
                 className="h-6 w-6 mx-auto"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/512px-Svelte_Logo.svg.png"
+                src="https://i.pinimg.com/originals/73/ec/22/73ec22c16401e6be2b7066766649dd8b.png"
                 alt="svelte logo"
               />
             </a>
@@ -218,7 +218,7 @@ const SideBar = () => {
             </button>
           </div>
         </aside>
-        <div className="grid grid-cols-6 mx-auto overflow-y-scroll ">
+        <div className="grid grid-cols-6 m-6 overflow-y-scroll ">
           <WeatherCard />
           <WeatherCard />
           <WeatherCard />
