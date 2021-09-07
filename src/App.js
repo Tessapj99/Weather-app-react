@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import SideBar from './components/SideBar';
+import WeatherCard from './components/WeatherCard';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <SideBar />
     </div>
   );
