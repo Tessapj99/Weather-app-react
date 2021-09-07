@@ -5,10 +5,10 @@ import WeatherCard from './WeatherCard';
 const SideBar = () => {
     return (
       <div
-        className="h-screen w-screen flex"
+        className="h-screen w-screen flex bg-auto"
         style={{
           backgroundImage:
-            'url("https://www.google.com/search?q=weather+forecast+background&tbm=isch&chips=q:weather+forecast+background,g_1:wallpaper:R1CPmcOtQOg%3D&rlz=1C5CHFA_enIN968IN968&hl=en&sa=X&ved=2ahUKEwjJjY_v5uzyAhWIZSsKHYSmDnsQ4lYoAXoECAEQEw&biw=1440&bih=821#imgrc=Ppi35qGXahhD8M")',
+            'url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Weather-Background.jpg")',
         }}
       >
         <aside className="flex flex-col items-center bg-white text-gray-700 shadow h-full">
