@@ -1,9 +1,16 @@
+import { BackgroundColor } from 'chalk';
 import React from 'react';
 import WeatherCard from './WeatherCard';
 
 const SideBar = () => {
     return (
-      <div className="h-screen w-screen flex bg-gray-200">
+      <div
+        className="h-screen w-screen flex"
+        style={{
+          backgroundImage:
+            'url("https://www.google.com/search?q=weather+forecast+background&tbm=isch&chips=q:weather+forecast+background,g_1:wallpaper:R1CPmcOtQOg%3D&rlz=1C5CHFA_enIN968IN968&hl=en&sa=X&ved=2ahUKEwjJjY_v5uzyAhWIZSsKHYSmDnsQ4lYoAXoECAEQEw&biw=1440&bih=821#imgrc=Ppi35qGXahhD8M")',
+        }}
+      >
         <aside className="flex flex-col items-center bg-white text-gray-700 shadow h-full">
           <div className="h-20 flex items-center w-20">
             <a className="h-6 w-6 mx-auto" href="http://svelte.dev/">
@@ -211,7 +218,7 @@ const SideBar = () => {
             </button>
           </div>
         </aside>
-        <div className="grid grid-cols-6 m-6 overflow-y-scroll ">
+        <div className="grid grid-cols-6 mx-auto overflow-y-scroll ">
           <WeatherCard />
           <WeatherCard />
           <WeatherCard />
