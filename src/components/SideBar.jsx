@@ -1,9 +1,25 @@
 import { BackgroundColor } from 'chalk';
-import React from 'react';
+import React, { useEffect,useState } from 'react';
+import { weatherApi } from '../API/ApiCalls';
 import WeatherCard from './WeatherCard';
 import WeatherData from './WeatherData';
 
 const SideBar = () => {
+    const [data, setData] = useState([])
+
+    const getWeather = async () => {
+        const resp = await weatherApi().then((result) => {
+            // console.log(result);
+            setData(result.data.list)
+            
+        } )
+        
+    }
+    useEffect(() => {
+       getWeather()   
+    }, [])
+
+    console.log(data);
     return (
       <div
         className="h-screen w-screen flex bg-auto"
@@ -222,7 +238,7 @@ const SideBar = () => {
         <div className="grid grid-cols-6 m-6 overflow-y-scroll ">
           
                 {
-                    WeatherData.map((item) => { return <WeatherCard {...item} />})
+                    data.map((item) => { return <WeatherCard {...item} />})
         }
         </div>
       </div>

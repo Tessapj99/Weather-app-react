@@ -1,11 +1,11 @@
 import React from "react";
 import WeatherData from "./WeatherData";
 
-const WeatherCard = ({temp, place, weather}) => {
+const WeatherCard = ({main,name,weather}) => {
   return (
     <div className =" flex items-center justify-center mr-4 ml-4 mt-4 mb-4">
       <div className ="flex flex-col bg-white rounded p-4 w-full max-w-xs ">
-              <div className="font-bold text-xl">{ place}</div>
+              <div className="font-bold text-xl">{ name}</div>
               <div className="text-sm text-gray-500">{ new Date ().toDateString()}</div>ß
         <div className ="mt-6 text-6xl self-center inline-flex items-center justify-center rounded-lg text-indigo-400 h-24 w-24">
           <svg
@@ -24,9 +24,9 @@ const WeatherCard = ({temp, place, weather}) => {
           </svg>
         </div>
         <div className ="flex flex-row items-center justify-center mt-6">
-                  <div className="font-medium text-6xl">{ temp}</div>
+                  <div className="font-medium text-3">{ main.temp}</div>
           <div className ="flex flex-col items-center ml-6">
-                      <div>{ weather}</div>
+                      <div>{ weather[0].description}</div>
             <div className ="mt-1">
               <span className ="text-sm">
                 <i className ="far fa-long-arrow-up"></i>
@@ -43,15 +43,15 @@ const WeatherCard = ({temp, place, weather}) => {
         </div>
         <div className ="flex flex-row justify-between mt-6">
           <div className ="flex flex-col items-center">
-            <div className ="font-medium text-sm">Wind</div>
+            <div className ="font-medium text-2">Wind</div>
             <div className ="text-sm text-gray-500">9k/h</div>
           </div>
           <div className ="flex flex-col items-center">
-            <div className ="font-medium text-sm">Humidity</div>
+            <div className ="font-medium text-2">Humidity</div>
             <div className ="text-sm text-gray-500">68%</div>
           </div>
           <div className ="flex flex-col items-center">
-            <div className ="font-medium text-sm">Visibility</div>
+            <div className ="font-medium text-2">Visibility</div>
             <div className ="text-sm text-gray-500">10km</div>
           </div>
         </div>
