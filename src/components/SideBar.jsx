@@ -1,6 +1,7 @@
 import { BackgroundColor } from 'chalk';
 import React from 'react';
 import WeatherCard from './WeatherCard';
+import WeatherData from './WeatherData';
 
 const SideBar = () => {
     return (
@@ -219,16 +220,10 @@ const SideBar = () => {
           </div>
         </aside>
         <div className="grid grid-cols-6 m-6 overflow-y-scroll ">
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
+          
+                {
+                    WeatherData.map((item) => { return <WeatherCard {...item} />})
+        }
         </div>
       </div>
     );
